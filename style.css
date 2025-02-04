@@ -1,0 +1,536 @@
+ *{
+    padding: 0;
+    margin: 0;
+    /* border:1px solid #0c0b0b; */
+}
+.black-ops-one-regular {
+    font-family: "Black Ops One", system-ui;
+  }
+  .emilys-candy-regular {
+    font-family: "Emilys Candy", serif;
+  }
+  .average-sans-regular {
+    font-family: "Average Sans", serif;
+  }
+  
+
+
+#nav {
+    padding: 2px 0px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    background-color: #c00;
+}
+.navbar-nav {
+    align-items: center;
+    gap: 30px;
+    padding-right: 28%;
+}
+.navbar-nav h4 {
+    padding: 10px 10px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-radius: 20%;
+    font-weight: 500;
+    color: #c00;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 20px;
+    overflow: hidden;
+    font-family: "Black Ops One", system-ui;
+}
+.navbar-nav h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+.navbar-nav h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+.navbar-nav h4 a {
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+.navbar-nav h4:hover a {
+    color: #c00;
+}
+
+
+
+#hero{
+    height: 100vh;
+    width: 100%;
+    background: whitesmoke; 
+    background-image: url("../images/me3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#hero h1{
+    font-family: "Emilys Candy", serif;
+    font: 500;
+    font-size: 10vi;
+    padding-top: 290px;
+    text-align: center;
+    background: linear-gradient(to right, #c00 20%, beige 50%, #c00 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#hero h1 span{
+    display: inline-block;
+    font-family: "Emilys Candy", serif;
+    letter-spacing: 3px;  
+}
+
+
+#education {
+    min-height: 80vh;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 4vw 0;
+}
+#education h2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 80px;
+    font-family: "Black Ops One", system-ui;
+    color: #c00;
+}
+#education h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 3vi;
+    color: black;
+    padding: 40px 50px;
+    text-align: center;
+}
+.elem {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #16151564;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+.name {
+    text-align: left;
+    font-size: 2.5vi;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    position: relative;
+    z-index: 9;
+    color: #c00; 
+}
+.year{
+    text-align: right;
+    font-size: 2.5vi;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    position: relative;
+    z-index: 9;
+    color: #c00;
+}
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.25s;
+}
+.elem:hover .overlay {
+    top: 0;
+}
+#fixed-image {
+    height: 29vw;
+    width: 22vw;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#skills{
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
+#skills h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 3vi;
+    text-align: center;
+    padding: 20px 140px;
+    color: black;
+}
+#skills h2{
+    font-family: "Black Ops One", system-ui;
+    font-size: 100px;
+    color: #c00;
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    margin-left: 2%;
+    border-bottom: 1px solid;
+    padding: 30px 0px;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+  }
+.swiper-slide p{
+   padding: 115px 0;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 500;
+   font-size: 50px;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+
+#work{
+    height: 120vh;
+    width: 100%;
+    background: whitesmoke;
+}
+#work h2{
+    font-family: "Black Ops One", system-ui;
+    font-size: 100px;
+    color: #c00;
+    text-align: center;
+    width: 96%;
+    margin-left: 2%;
+    border-bottom: 1px solid;
+}
+#work h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 3vi;
+    color: black;
+    text-align: center;
+}
+.text-div a{
+    text-decoration: none;
+}
+.work_elem{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.work_elem img{
+    width: 25%;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(5%) rotate(5deg);
+}
+.work_elem img:nth-child(1){
+    left: 11%;
+}
+.work_elem img:nth-child(3){
+    right: 11%;
+}
+.text-div{
+    height: 50%;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+.work_elem h4{
+    font-family: 'Times New Roman', Times, serif;
+    color: #c00;
+    font-size: 3vi;
+    margin-top: -15px;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+    overflow: hidden;
+}
+.work_elem:hover h4{
+    transform: translateY(-100%);
+    color: #0c0111;
+}
+.work_elem:hover img{
+    width: 25%;
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
+
+#maker{
+    background-color: whitesmoke;
+    text-align:center;
+    height: 110vh;
+    width: 100%;
+}
+#maker h2{
+    font-family: "Black Ops One", system-ui;
+    font-size: 100px;
+    color: #c00;
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    margin-left: 2%;
+    border-bottom: 1px solid;
+}
+#maker h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 3vi;
+    color: black;
+    /* padding: 40px 50px; */
+    text-align: center;
+}
+.maker h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 2vi;
+    color: #c00;
+    padding: 30px 0;
+}
+.maker p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.5vi;
+    color: #c00;
+}
+.maker_img{
+    width: 100%;
+    height: 700px;
+    background: url("../images/frame2-removebg-preview.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0px 100px;
+    animation: 2s frame infinite;
+}
+@keyframes frame{
+    0%{background-position: 0px 0px;}
+    50%{background-position: 0px 100px;}
+    100%{background-position: 0px 0px;}
+}
+.maker_img img{
+    animation: animateUser 2s  infinite;
+    width: 78%;
+    padding-top: 50px;
+    height: 560px;
+    transform: translate(0px,0px);
+}
+@keyframes animateUser{
+    0%{transform: translate(0px,0px);}
+    50%{transform: translate(0px,100px);}
+    100%{transform: translate(0px,0px);}
+}
+
+
+ 
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 40px;
+    position: relative;
+}
+.maroon-box {
+    background-color: #c00;
+    color: white;
+    padding: 40px;
+    max-width: 50%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.maroon-box p{
+    font-size: 20px;
+}
+#footer h2{
+    font-family: "Black Ops One", system-ui;
+    font-size: 98px; 
+    font-weight: 500;
+}
+.subtext {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+form {
+    margin-top: 20px;
+    display: flex;
+}
+input {
+    padding: 12px;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+button {
+    background-color: whitesmoke;
+    color: #c00;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+.image-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.image-container img {
+    height: 100vh;
+    width:  100%;
+}
+footer {
+    padding: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #424242;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+}
+.brand {
+    font-family: "Black Ops One", system-ui;
+    font-size: 45px;
+    font-weight: bold;
+    color: #c00;
+}
+.rights{
+    font-size: 20px;
+}
+.credit a {
+    color: #c00;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+
+
+
+#main{
+    position: relative;
+    z-index: 10;
+}
+
+
+.spacer{
+    height: 0px;
+}
+.marquee {
+    background: #c00;
+    color: whitesmoke;
+    padding: 30px 0;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.marquee_inner {
+    display: flex;
+    width: fit-content;
+    flex: auto;
+    flex-direction: row;
+}
+.marquee_part {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 4px;
+}
+.arrow img {
+    width: 50px;
+    height: auto;
+    transform: rotate(0deg); /* Initial rotation state */
+}
+.arrow {
+    margin: 0 1em;
+    transition: all 0.5s ease-in-out;
+}
+.arrow.active {
+    transform: rotate(180deg); /* Active state for the arrow, this could be your condition */
+}
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+#education h3{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+#skills h3{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+#work h3{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+#maker h3{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+#footer h3{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+@media (max-width: 768px) {  /* Adjust breakpoint as needed */
+    .maroon-box {
+        display: none;
+    }
+}
